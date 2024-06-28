@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="/stylesheet/signup.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="/images/logoo.png" alt="Website Logo" class="nav-logo">
+            <span class="nav-site-name">e-Swachhta</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="/login">Login</a>
+            <a href="/signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="right-side">
+            <h2>Let's get started with e-Swachhta</h2>
+            <form id="signup-form" method="post" action="/register">
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="name" class="input" placeholder="Enter text here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="Lname" class="input" placeholder="Enter text here" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" class="input" placeholder="Enter text here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="input" placeholder="Enter text here" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="phone" class="input" placeholder="Enter text here" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Bank Details</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="accountNumber">Bank Account Number</label>
+                            <input type="number" name="accno" class="input" placeholder="Enter text here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ifscCode">IFSC Code</label>
+                            <input type="text" name="ifsc" class="input" placeholder="Enter text here" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bankName">Bank Name</label>
+                            <input type="text" name="bname" class="input" placeholder="Enter text here" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Location</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" name="city" class="input" placeholder="Enter text here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input type="text" name="country" class="input" placeholder="Enter text here" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Password</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="input" placeholder="Enter text here" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <div id="signup-error-message"></div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>

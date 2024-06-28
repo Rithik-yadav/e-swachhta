@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="/stylesheet/navBar.css">
+    <link rel="stylesheet" href="/stylesheet/uploadFile.css">
+    <!-- <link rel="stylesheet" href="../public/stylesheet/productForm.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a7f66f8e73.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="flex flex-col nav">
+
+        <div class="border border-gray-300 py-3 flex gap-4 shadow-xl rounded-md items-center justify-between">
+
+            <!-- Left section -->
+            <div class="flex items-center">
+                <h2 class="pl-4 pr-12 font-bold text-3xl text-blue-600 ">e-Swachhta</h2>
+            </div>
+
+            <!-- Right section -->
+            <div class="flex items-center space-x-4">
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/home"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <span class=" absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Home
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="messages.html"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-message"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Messages
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/productForm"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-wallet" style="color: #FA7070;"></i>
+                    </a>
+                    <span class=" absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg
+                                    border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all
+                                    duration-300 ease-in-out group-hover:scale-100">
+                        Sell
+                    </span>
+                </div>
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/history"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                                                                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                                                                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        History
+                    </span>
+                </div>
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/viewProduct"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Products
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/settings"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Settings
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="title">e-Swachhta</div>
+        <div class="subtitle">Please upload photos of Product</div>
+
+        <form action="/upload-files/<%=pid%>" method="post" enctype="multipart/form-data">
+            <!-- Photos Upload Section -->
+            <div class="section-title">Upload Photos</div>
+
+            <div class="input-row">
+                <div class="input-container ic1">
+                    <input id="photo1" class="input" name="photo1" type="file" accept="image/*" multiple required />
+                    <div class="cut"></div>
+                    <label for="photo1" class="placeholder">Photo 1</label>
+                </div>
+
+                <!-- <div class="input-container ic1">
+                    <input id="photo2" class="input" name="photo2" type="file" accept="image/*" required />
+                    <div class="cut"></div>
+                    <label for="photo2" class="placeholder">Photo 2</label>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-container ic2">
+                    <input id="photo3" class="input" name="photo3" type="file" accept="image/*" required />
+                    <div class="cut"></div>
+                    <label for="photo3" class="placeholder">Photo 3</label>
+                </div>
+
+                <div class="input-container ic2">
+                    <input id="photo4" class="input" name="photo4" type="file" accept="image/*" required />
+                    <div class="cut"></div>
+                    <label for="photo4" class="placeholder">Photo 4</label>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-container ic2">
+                    <input id="photo5" class="input" name="photo5" type="file" accept="image/*" />
+                    <div class="cut"></div>
+                    <label for="photo5" class="placeholder">Photo 5 (optional)</label>
+                </div>
+            </div> -->
+
+                <!-- File Upload Section -->
+                <div class="section-title">Upload File</div>
+
+                <!-- <div class="input-container ic2">
+                    <input id="fileupload" class="input" name="invoiceFile" type="file" />
+                    <div class="cut"></div>
+                    <label for="fileupload" class="placeholder">Upload Invoice (IF)</label>
+                </div> -->
+
+                <div class="button-row">
+                    <button type="button" class="back"><a class="back-a" href="/prouctForm">Back</a></button>
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

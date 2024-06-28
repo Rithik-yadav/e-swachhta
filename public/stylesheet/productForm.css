@@ -1,0 +1,366 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  --s: 194px; /* control the size */
+  --c1: #f6edb3;
+  --c2: #acc4a3;
+
+  --_l: #0000 calc(25% / 3), var(--c1) 0 25%, #0000 0;
+  --_g: conic-gradient(from 120deg at 50% 87.5%, var(--c1) 120deg, #0000 0);
+
+  background: var(--_g), var(--_g) 0 calc(var(--s) / 2),
+    conic-gradient(from 180deg at 75%, var(--c2) 60deg, #0000 0),
+    conic-gradient(from 60deg at 75% 75%, var(--c1) 0 60deg, #0000 0),
+    linear-gradient(150deg, var(--_l)) 0 calc(var(--s) / 2),
+    conic-gradient(
+      at 25% 25%,
+      #0000 50%,
+      var(--c2) 0 240deg,
+      var(--c1) 0 300deg,
+      var(--c2) 0
+    ),
+    linear-gradient(-150deg, var(--_l)) #55897c /* third color here */;
+  background-size: calc(0.866 * var(--s)) var(--s);
+}
+
+.form {
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 680px;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.section-title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input,
+.select {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+  appearance: none;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 150px;
+}
+
+.cut-short {
+  width: 150px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut,
+.select:focus ~ .cut,
+.select:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder,
+.select:focus ~ .placeholder,
+.select:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder,
+.select:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder,
+.select:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+.continue-application {
+  --color: #fff;
+  --background: #404660;
+  --background-hover: #3a4059;
+  --background-left: #2b3044;
+  --folder: #f3e9cb;
+  --folder-inner: #beb393;
+  --paper: #ffffff;
+  --paper-lines: #bbc1e1;
+  --paper-behind: #e1e6f9;
+  --pencil-cap: #fff;
+  --pencil-top: #275efe;
+  --pencil-middle: #fff;
+  --pencil-bottom: #5c86ff;
+  --shadow: rgba(13, 15, 25, 0.2);
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  padding: 17px 29px 17px 69px;
+  transition: background 0.3s;
+  color: var(--color);
+  transform: translate(90%, -10%);
+  background: #667bc6;
+}
+
+.continue-application > div {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 53px;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+  background: var(--background-left);
+}
+
+.continue-application > div .folder {
+  width: 23px;
+  height: 27px;
+  position: absolute;
+  left: 15px;
+  top: 13px;
+}
+
+.continue-application > div .folder .top {
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder .top svg {
+  width: 24px;
+  height: 27px;
+  display: block;
+  fill: var(--folder);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease var(--fds, 0.45s);
+  transform: perspective(120px) rotateY(var(--fr, 0deg));
+}
+
+.continue-application > div .folder:before,
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  content: "";
+  position: absolute;
+  left: var(--l, 0);
+  top: var(--t, 0);
+  width: var(--w, 100%);
+  height: var(--h, 100%);
+  border-radius: 1px;
+  background: var(--b, var(--folder-inner));
+}
+
+.continue-application > div .folder:before {
+  box-shadow: 0 1.5px 3px var(--shadow), 0 2.5px 5px var(--shadow),
+    0 3.5px 7px var(--shadow);
+  transform: translateX(var(--fx, 0));
+  transition: transform 0.4s ease var(--fd, 0.3s);
+}
+
+.continue-application > div .folder:after,
+.continue-application > div .folder .paper {
+  --l: 1px;
+  --t: 1px;
+  --w: 21px;
+  --h: 25px;
+  --b: var(--paper-behind);
+}
+
+.continue-application > div .folder:after {
+  transform: translate(var(--pbx, 0), var(--pby, 0));
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .folder .paper {
+  z-index: 1;
+  --b: var(--paper);
+}
+
+.continue-application > div .folder .paper:before,
+.continue-application > div .folder .paper:after {
+  content: "";
+  width: var(--wp, 14px);
+  height: 2px;
+  border-radius: 1px;
+  transform: scaleY(0.5);
+  left: 3px;
+  top: var(--tp, 3px);
+  position: absolute;
+  background: var(--paper-lines);
+  box-shadow: 0 12px 0 0 var(--paper-lines), 0 24px 0 0 var(--paper-lines);
+}
+
+.continue-application > div .folder .paper:after {
+  --tp: 6px;
+  --wp: 10px;
+}
+
+.continue-application > div .pencil {
+  height: 2px;
+  width: 3px;
+  border-radius: 1px 1px 0 0;
+  top: 8px;
+  left: 105%;
+  position: absolute;
+  z-index: 3;
+  transform-origin: 50% 19px;
+  background: var(--pencil-cap);
+  transform: translateX(var(--pex, 0)) rotate(35deg);
+  transition: transform 0.4s ease var(--pbd, 0s);
+}
+
+.continue-application > div .pencil:before,
+.continue-application > div .pencil:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: var(
+    --b,
+    linear-gradient(
+      var(--pencil-top) 55%,
+      var(--pencil-middle) 55.1%,
+      var(--pencil-middle) 60%,
+      var(--pencil-bottom) 60.1%
+    )
+  );
+  width: var(--w, 5px);
+  height: var(--h, 20px);
+  border-radius: var(--br, 2px 2px 0 0);
+  top: var(--t, 2px);
+  left: var(--l, -1px);
+}
+
+.continue-application > div .pencil:before {
+  -webkit-clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+  clip-path: polygon(0 5%, 5px 5%, 5px 17px, 50% 20px, 0 17px);
+}
+
+.continue-application > div .pencil:after {
+  --b: none;
+  --w: 3px;
+  --h: 6px;
+  --br: 0 2px 1px 0;
+  --t: 3px;
+  --l: 3px;
+  border-top: 1px solid var(--pencil-top);
+  border-right: 1px solid var(--pencil-top);
+}
+
+.continue-application:before,
+.continue-application:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--color);
+  transform-origin: 9px 1px;
+  transform: translateX(var(--cx, 0)) scale(0.5) rotate(var(--r, -45deg));
+  top: 26px;
+  right: 16px;
+  transition: transform 0.3s;
+}
+
+.continue-application:after {
+  --r: 45deg;
+}
+
+.continue-application:hover {
+  --cx: 2px;
+  --bg: var(--background-hover);
+  --fx: -40px;
+  --fr: -60deg;
+  --fd: 0.15s;
+  --fds: 0s;
+  --pbx: 3px;
+  --pby: -3px;
+  --pbd: 0.15s;
+  --pex: -24px;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View</title>
+    <link rel="stylesheet" href="/stylesheet/navBar.css">
+    <link rel="stylesheet" href="/stylesheet/viewProduct.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a7f66f8e73.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="flex flex-col nav">
+
+        <div class="border border-gray-300 py-3 flex gap-4 shadow-xl rounded-md items-center justify-between">
+
+            <!-- Left section -->
+            <div class="flex items-center">
+                <h2 class="pl-4 pr-12 font-bold text-3xl text-blue-600 ">
+                    <span id="typing-text">e-Swachhta</span>
+                </h2>
+            </div>
+
+            <!-- Right section -->
+            <div class="flex items-center space-x-4">
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/home"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <span class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Home
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="messages.html"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-message"></i>
+                    </a>
+                    <span class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Messages
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/productForm"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-wallet"></i>
+                    </a>
+                    <span class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Sell
+                    </span>
+                </div>
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/history"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                                                                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                                                                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        History
+                    </span>
+                </div>
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/viewProduct"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-lightbulb" style="color: #FA7070;"></i>
+                    </a>
+                    <span class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Products
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/settings"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <span class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Settings
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="heading-pending"> Pending Orders</h1>
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-img"></div>
+            <div class="card-info">
+                <p class="text-title">Product Title</p>
+                <p class="text-body">Product description and details</p>
+            </div>
+            <div class="card-footer">
+                <span class="text-title Cprice">Current price: $499.49</span>
+            </div>
+
+            <input type="text" class="input-field" placeholder="Enter new price">
+            <div class="card-actions">
+                <button class="btn accept">Accept</button>
+                <button class="btn reject">Reject</button>
+                <button class="btn done">Offer</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="/images/bg1.jpg" alt="something went wrong" class="img1"></div>
+            <div class="card-info">
+                <p class="text-title">Product Title</p>
+                <p class="text-body">Product description and details</p>
+            </div>
+            <div class="card-footer">
+                <span class="text-title Cprice">Current price: $499.49</span>
+            </div>
+
+            <input type="number" class="input-field" placeholder="Enter new price">
+            <div class="card-actions">
+                <button class="btn accept">Accept</button>
+                <button class="btn reject">Reject</button>
+                <button class="btn done">Offer</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img"></div>
+            <div class="card-info">
+                <p class="text-title">Product Title</p>
+                <p class="text-body">Product description and details</p>
+            </div>
+            <div class="card-footer">
+                <span class="text-title">Current price: $499.49</span>
+            </div>
+
+            <input type="text" class="input-field" placeholder="Enter new price">
+            <div class="card-actions">
+                <button class="btn accept">Accept</button>
+                <button class="btn reject">Reject</button>
+                <button class="btn done">Offer</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="../public/images/bg1.jpg" alt="something went wrong" class="img1"></div>
+            <div class="card-info">
+                <p class="text-title">Product Title</p>
+                <p class="text-body">Product description and details</p>
+            </div>
+            <div class="card-footer">
+                <span class="text-title Cprice">Current price: $499.49</span>
+            </div>
+
+            <input type="text" class="input-field" placeholder="Enter new price">
+            <div class="card-actions">
+                <button class="btn accept">Accept</button>
+                <button class="btn reject">Reject</button>
+                <button class="btn done">Offer</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

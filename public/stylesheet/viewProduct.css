@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+.heading-pending {
+  margin: 10px;
+  text-align: center;
+  font-size: 3.3em;
+  font-family: "Ubuntu", sans-serif;
+  color: #071952;
+  font-weight: 600;
+}
+.main-container {
+  display: flex;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    minmax(0, 1fr)
+  ); /* Four columns with equal width */
+  gap: 20px; /* Gap between grid items */
+}
+
+.card {
+  border-radius: 25px;
+  margin-left: 25px;
+  width: 250px;
+  height: 400px;
+  padding: 0.8em;
+  background: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden; /* Ensure image does not overflow */
+  height: 0; /* Start with a zero height */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
+}
+
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure image width covers entire container */
+  height: 100%; /* Ensure image height covers entire container */
+  object-fit: cover; /* Scale image while preserving aspect ratio */
+  border-radius: 10px;
+}
+.text-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.text-body {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.card-info {
+  padding-top: 10%;
+}
+.Cprice {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #543310;
+}
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: black;
+  background-color: #a1dd70;
+  color: white;
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 0.2em;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-10%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #06d001;
+}
+
+.btn.reject {
+  background-color: #ff6969;
+}
+.btn.reject:hover {
+  background-color: red;
+  transform: translateY(-10%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn.done {
+  background-color: #80c4e9;
+}
+.done:hover {
+  transform: translateY(-10%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #4c3bcf;
+}
+/* Hover effects */
+.card-img:hover {
+  transform: translateY(-10%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-button:hover {
+  border-color: #ffcaa6;
+  background-color: #ffcaa6;
+}

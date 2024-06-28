@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product form</title>
+    <link rel="stylesheet" href="/stylesheet/navBar.css">
+    <link rel="stylesheet" href="/stylesheet/productForm.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a7f66f8e73.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="flex flex-col nav">
+
+        <div class="border border-gray-300 py-3 flex gap-4 shadow-xl rounded-md items-center justify-between">
+
+            <!-- Left section -->
+            <div class="flex items-center">
+                <h2 class="pl-4 pr-12 font-bold text-3xl text-blue-600 ">e-Swachhta</h2>
+            </div>
+
+            <!-- Right section -->
+            <div class="flex items-center space-x-4">
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/home"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+
+                        <i class="fa-solid fa-house""></i>
+                    </a>
+                    <span
+                        class=" absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg
+                            border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all
+                            duration-300 ease-in-out group-hover:scale-100">
+                            Home
+                            </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="messages.html"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-message"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Messages
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/productForm"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-wallet" style="color: #FA7070;"></i>
+                    </a>
+                    <span class=" absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg
+                            border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all
+                            duration-300 ease-in-out group-hover:scale-100">
+                        Sell
+                    </span>
+                </div>
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/history"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                                                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                                                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        History
+                    </span>
+                </div>
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/viewProduct"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Products
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="settings.html"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Settings
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form">
+            <div class="title">e-Swachhta</div>
+            <div class="subtitle">Let's create your product listing!</div>
+
+            <form action="/submit-product" method="post">
+                <!-- Product Details Section -->
+                <div class="section-title">Product Details</div>
+
+                <div class="input-row">
+                    <div class="input-container ic1">
+                        <input id="productname" name="productName" class="input" type="text" placeholder=" " required />
+                        <div class="cut"></div>
+                        <label for="productname" class="placeholder">Product Name</label>
+                    </div>
+
+                    <div class="input-container ic1">
+                        <input id="productdetails" name="productDetails" class="input" type="text" placeholder=" "
+                            required />
+                        <div class="cut"></div>
+                        <label for="productdetails" class="placeholder">Product Details</label>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-container ic2">
+                        <input id="expectedprice" name="expectedPrice" class="input" type="number" placeholder=" "
+                            required />
+                        <div class="cut cut-short"></div>
+                        <label for="expectedprice" class="placeholder">Expected Price (₹ INR)</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <select id="working" name="working" class="select" required>
+                            <option value="" disabled selected> </option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <div class="cut cut-short"></div>
+                        <label for="working" class="placeholder">Working (yes/no)</label>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-container ic2">
+                        <select id="damage" name="damage" class="select" required>
+                            <option value="" disabled selected> </option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <div class="cut cut-short"></div>
+                        <label for="damage" class="placeholder">Damage (yes/no)</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <input id="damageDetails" name="damageDetails" class="input" type="text" placeholder=" " />
+                        <div class="cut cut-short"></div>
+                        <label for="damageDetails" class="placeholder">Details of Damage (if yes)</label>
+                    </div>
+                </div>
+
+                <!-- Customer Details Section -->
+                <div class="section-title">Customer Details</div>
+
+                <div class="input-row">
+                    <div class="input-container ic2">
+                        <input id="customername" name="customerName" class="input" type="text" placeholder=" "
+                            required />
+                        <div class="cut"></div>
+                        <label for="customername" class="placeholder">Your Name</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <input id="mobilenumber" name="mobileNumber" class="input" type="text" placeholder=" "
+                            required />
+                        <div class="cut"></div>
+                        <label for="mobilenumber" class="placeholder">Mobile Number</label>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-container ic2">
+                        <input id="emailid" name="emailId" class="input" type="emailId" placeholder=" " required />
+                        <div class="cut cut-short"></div>
+                        <label for="emailid" class="placeholder">Email ID</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <input id="pickupaddress" name="pickupAddress" class="input" type="text" placeholder=" "
+                            required />
+                        <div class="cut"></div>
+                        <label for="pickupaddress" class="placeholder">Pickup Address</label>
+                    </div>
+                </div>
+
+                <!-- Bank Account Details Section -->
+                <div class="section-title">Bank Account Details</div>
+
+                <div class="input-row">
+                    <div class="input-container ic2">
+                        <input id="accountholdername" name="accountHolderName" class="input" type="text"
+                            placeholder=" " />
+                        <div class="cut"></div>
+                        <label for="accountholdername" class="placeholder">Account Holder Name</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <input id="accountnumber" name="accountNumber" class="input" type="text" placeholder=" " />
+                        <div class="cut"></div>
+                        <label for="accountnumber" class="placeholder">Account Number</label>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-container ic2">
+                        <input id="bankname" name="bankName" class="input" type="text" placeholder=" " />
+                        <div class="cut"></div>
+                        <label for="bankname" class="placeholder">Bank Name</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <input id="ifsccode" name="ifscCode" class="input" type="text" placeholder=" " />
+                        <div class="cut cut-short"></div>
+                        <label for="ifsccode" class="placeholder">IFSC Code</label>
+                    </div>
+                </div>
+
+
+
+                <button class="continue-application">
+                    <div>
+                        <div class="pencil"></div>
+                        <div class="folder">
+                            <div class="top">
+                                <svg viewBox="0 0 24 27">
+                                    <path
+                                        d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="paper"></div>
+                        </div>
+                    </div>
+                    <a href="../views/home1.html"></a> Continue Application
+                </button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

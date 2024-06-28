@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: optional;
+  background-color: #0c0c0c;
+  font-family: "EB Garamond", serif;
+}
+#maindiv {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5vh;
+  padding-left: 10vw;
+}
+#e-Swachhta {
+  text-align: center;
+  color: aliceblue;
+}
+.main-container {
+  margin: 20px 20px 0 20;
+  display: flex;
+  border-radius: 35px;
+  min-height: fit-content;
+  justify-content: space-around;
+}
+.list-containers {
+  margin: 20px;
+  padding: 10px;
+  background-color: #146c94;
+  width: 40vw;
+  height: 70vh;
+  border-radius: 30px;
+  box-shadow: rgba(185, 183, 183, 0.24) 0px 3px 8px;
+}
+.heading-pending {
+  text-decoration: dotted;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 7px 0px 7px rgba(0, 0, 0, 0.4);
+  color: #faf0e6;
+}
+#success {
+  background-color: #41b06e;
+}
+.container {
+  border-radius: 10px;
+  margin: 8px;
+  padding: 5px;
+  background-color: #fff;
+  display: grid;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.items {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 255, 0.313);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-photo {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.input-field {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#acc-btn {
+  background-color: #059212;
+}
+#rej-btn {
+  background-color: #ee4e4e;
+}
+.btn:hover {
+  background-color: #0056b3;
+}

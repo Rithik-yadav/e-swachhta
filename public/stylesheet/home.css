@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: optional;
+  background-color: #0c0c0c;
+}
+#maindiv {
+  width: 100vw;
+  height: 100%;
+  padding-left: 6vw;
+}
+
+#main-headerdiv {
+  display: flex;
+}
+.hero-div {
+  padding: 30px;
+  height: 30vh;
+  background-color: #1c1678;
+  margin: 20px;
+  border-radius: 33px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#hero-div1 {
+  width: 75vw;
+}
+#hero-div2 {
+  width: 25vw;
+  padding: 10px;
+}
+.text-hero-div1 {
+  display: inline-block;
+  font-size: 3rem;
+  font-family: "EB Garamond", serif;
+  color: #a3ffd6;
+}
+#heading-herodiv2 {
+  color: #e9c874;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 700;
+}
+.side-content-list {
+  list-style: decimal;
+  padding: 3px;
+  padding-top: 0;
+  font-size: 1.3rem;
+  font-family: "EB Garamond", serif;
+  color: #a3ffd6;
+}
+#sell-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #604cc3;
+  height: 25vh;
+  margin-left: 30px;
+  margin-right: 20px;
+  border-radius: 35px;
+  padding-bottom: 20px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  color: #30e3ca;
+}
+.button-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+/* servces div */
+.services {
+  background-color: #2f89fc;
+  margin: 3vh;
+  border-radius: 35px;
+  color: #f5f5f5;
+  padding: 2vw;
+  text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#serviceslist {
+  display: flex;
+  justify-content: space-around;
+}
+.services-divs {
+  width: 25vw;
+  transition: height 1s ease 0s;
+  height: 20vh;
+  background: #30e3ca;
+  color: black;
+  border-radius: 30px;
+  font-family: "EB Garamond", serif;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.services-para {
+  font-size: 1.3rem;
+  margin: 10px;
+  color: #40514e;
+  transition: transform 0.3s ease;
+}
+
+#sell-button:hover,
+.services-divs:hover,
+.services:hover,
+.hero-div:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: translate3d(0, 2px, 0);
+}
+.services-divs:hover,
+.button-55:hover {
+  transform: scale(1.1);
+}
+
+#choosing {
+  background: #7aa2e3;
+}
+.choosing-divs {
+  background-color: #6ad4dd;
+  width: 25vw;
+  transition: height 1s ease 0s;
+  height: 20vh;
+  color: black;
+  border-radius: 30px;
+  font-family: "EB Garamond", serif;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin-bottom: 100px;
+}
+.button-55 {
+  align-self: center;
+  background-color: #4f98ca;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 4px;
+  width: 20vw;
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #effffb;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 2rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0), scale(1.1);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+/* footer css */
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}

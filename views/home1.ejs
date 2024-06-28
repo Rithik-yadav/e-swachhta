@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Trading</title>
+    <link rel="stylesheet" href="/stylesheet/navBar.css">
+    <link rel="stylesheet" href="/stylesheet/home1.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex flex-col nav">
+
+        <div class="border border-gray-300 py-3 flex gap-4 shadow-xl rounded-md items-center justify-between">
+
+            <!-- Left section -->
+            <div class="flex items-center">
+                <h2 class="pl-4 pr-12 font-bold text-3xl text-blue-600 ">e-Swachhta</h2>
+            </div>
+
+            <!-- Right section -->
+            <div class="flex items-center space-x-4">
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/home"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+
+                        <i class="fa-solid fa-house" style="color: #FA7070;"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Home
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="messages.html"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-message"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Messages
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/productForm"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-wallet"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Sell
+                    </span>
+                </div>
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/history"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-regular fa-calendar-xmark"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0
+                                                            rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md
+                                                            transition-all duration-300 ease-in-out group-hover:scale-100">
+                        History
+                    </span>
+                </div>
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="/viewProduct"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Products
+                    </span>
+                </div>
+
+                <div class="group relative px-4 cursor-pointer">
+                    <a href="settings.html"
+                        class="flex h-10 w-10 items-center justify-center rounded-full hover:text-blue-500 anchor">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <span
+                        class="absolute top-10 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                        Settings
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero">
+        <h1 class="typing-text" id="head--">Welcome back <%= name%>🙏🏻</h1>
+        <p>At e-Swachhta, is your premier platform for trading electronic waste (e-waste)
+            responsibly. We connect
+            individuals and businesses with
+            certified recycling facilities to ensure the sustainable disposal and recycling of electronic devices.
+        </p>
+    </section>
+
+    <div class="container">
+        <h1 style="text-align: center; font-size: 50px; font-weight: 600; color: #008bf8;">Services</h1>
+        <section class="services">
+            <div class="card" id="card1">
+                <div class="card-details">
+                    <p class="text-title">E-Waste Collection</p>
+                    <p class="text-body">We offer convenient collection services for businesses and individuals to
+                        responsibly dispose of their electronic waste.</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div>
+            <div class="card">
+                <div class="card-details">
+                    <p class="text-title">Price Negotiation:</p>
+                    <p class="text-body">We empower users to negotiate prices directly with certified e-waste recycling
+                        facilities.</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div>
+            <div class="card">
+                <div class="card-details">
+                    <p class="text-title">Home Pickup</p>
+                    <p class="text-body">Enjoy the convenience of home pickup for your e-waste items.Once a price is
+                        agreed upon, schedule a pickup at your convenience.</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div>
+            <div class="card">
+                <div class="card-details">
+                    <p class="text-title">Find Facilities</p>
+                    <p class="text-body">Use our interactive map to locate the nearest certified e-waste recycling
+                        facilities.Find detailed information about each facility's services and contact details.</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div>
+        </section>
+        <hr class="light-line">
+        <h1 style="text-align: center; font-size: 50px; font-weight: 600; color: #f4ce14; margin-top: 20px;">Why Choose
+            Us?</h1>
+        <section class="services features">
+            <div class="card feature-card" id="card1">
+                <div class="card-details">
+                    <p class="text-title">Transparent Pricing:</p>
+                    <p class="text-body">Our platform ensures fair price negotiation and transparency in the e-waste
+                        recycling process.</p>
+                </div>
+                <button class="card-button feature-button">More info</button>
+            </div>
+            <div class="card feature-card">
+                <div class="card-details">
+                    <p class="text-title">Convenient Pickup:</p>
+                    <p class="text-body">We prioritize customer convenience with hassle-free home pickup services.</p>
+                </div>
+                <button class="card-button feature-button">More info</button>
+            </div>
+            <div class="card feature-card">
+                <div class="card-details">
+                    <p class="text-title">Certified Facilities:</p>
+                    <p class="text-body">Partnered with certified e-waste recycling facilities to guarantee responsible
+                        disposal.</p>
+                </div>
+                <button class="card-button feature-button">More info</button>
+            </div>
+
+            <!-- <div class="card">
+                <div class="card-details">
+                    <p class="text-title">Find Nearest Facilities</p>
+                    <p class="text-body">Use our interactive map to locate the nearest certified e-waste recycling
+                        facilities.Find detailed information about each facility's services and contact details.</p>
+                </div>
+                <button class="card-button">More info</button>
+            </div> -->
+        </section>
+        <hr class="light-line">
+        <div class="container-steps">
+            <h2 id="how">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Submit Your Waste</h3>
+                    <p>Upload details and images of your electronic devices for recycling.</p>
+                </div>
+                <div class="arrow"><span></span></div>
+                <div class="step">
+                    <h3>2. Negotiate Prices</h3>
+                    <p>Receive offers from multiple recycling facilities and negotiate the best price.</p>
+                </div>
+                <div class="arrow"><span></span></div>
+                <div class="step">
+                    <h3>3. Choose a Facility</h3>
+                    <p>Select a facility based on price, proximity, and services offered.</p>
+                </div>
+                <div class="arrow"><span></span></div>
+                <div class="step">
+                    <h3>4. Schedule Pickup</h3>
+                    <p>Arrange for home pickup or drop off your e-waste at the chosen facility.</p>
+                </div>
+                <div class="arrow"><span></span></div>
+                <div class="step">
+                    <h3>5. Track Recycling</h3>
+                    <p>Monitor the recycling process and receive confirmation once completed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="/home">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="/viewProduct">Products</a></li>
+            <li class="menu__item"><a class="menu__link" href="/settings">Settings</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+        </ul>
+        <p>Made by Rithik Yadav</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a7f66f8e73.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
